@@ -26,7 +26,7 @@ In order to work with PHP and mySQL on XAMPP you can do the following step
 2. Press the Config button on Apache module
 3. Choose Apache (httpd.conf)
 4. Search for the word "DocumentRoot"
-5. Change the root to your absolute path.
+5. Change the XAMPP root file to your absolute path.
 6. Do the same for <Directory "change to your path">
 7. Save the file and continue
 
