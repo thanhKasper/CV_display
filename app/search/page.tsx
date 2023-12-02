@@ -9,7 +9,7 @@ export default function AllGamePage() {
     <Container p={0} maxW={{ base: "90%", lg: "75%" }} my={10}>
       <Flex>
         <GameList />
-        <FilterBar />
+        {/* <FilterBar /> */}
       </Flex>
     </Container>
   );
