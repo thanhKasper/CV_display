@@ -18,6 +18,18 @@
       "reg_date": "2023-11-30 16:01:05"
     },
     {
+      "phone_id": 12,
+      "phone_number": "0947654321",
+      "resume_id": 2,
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "phone_id": 13,
+      "phone_number": "0947653221",
+      "resume_id": 2,
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
       "phone_id": 3,
       "phone_number": "0123456788",
       "resume_id": 3,
