@@ -17,8 +17,6 @@ import GameDescription from "./_components/GameDescription";
 import useGameGetIdApi from "./_api/useGameIdApi";
 import CommentSection from "./_components/CommentSection";
 import AddComment from "./_components/AddComment";
-import getFromLocalStorage from "@/app/_lib/getFromLocalStorage";
-import useGetUserInfoApi from "@/app/user/_api/useGetUserInfoApi";
 
 export default function GamePage({ params }: { params: { id: string } }) {
   const [show, setShow] = React.useState(false);
