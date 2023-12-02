@@ -1,8 +1,6 @@
 import { Container, Text, VStack } from "@chakra-ui/react";
 import React, { useContext, useState } from "react";
 import GameBuy from "./GameBuy";
-import useGetPurchasedGameApi from "../../../app/user/_api/useGetPurchasedGameApi";
-import WishlistContext from "@/context/WishlistContext";
 import { IGame } from "@/context/WislistContextType";
 
 interface GameBuyListPropsType {
