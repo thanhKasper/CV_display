@@ -1,0 +1,13 @@
+[{
+    "language_id": 1,
+    "description": "English",
+    "resume_id": 1,
+    "reg_date": "2023-11-30 16:01:05"
+  },
+  {
+    "language_id": 2,
+    "description": "France",
+    "resume_id": 1,
+    "reg_date": "2023-11-30 16:01:05"
+  }
+]
