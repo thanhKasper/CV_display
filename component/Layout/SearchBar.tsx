@@ -69,7 +69,11 @@ const SearchBar = () => {
         display={{ base: "none", md: "flex" }}
       >
         <Flex width="75vw" alignItems={"center"}>
+          <Flex mr={4} _hover={{ color: "blue.500" }} cursor={"pointer"} fontSize={"xl"} fontWeight={"800"}>
+            Home
+          </Flex>
           <Input
+            ml={4}
             width="400px"
             type={"text"}
             placeholder={"Tìm kiếm"}
@@ -85,15 +89,6 @@ const SearchBar = () => {
               outline: "gray.200",
             }}
           />
-          <Flex ml={4} _hover={{ color: "blue.500" }} cursor={"pointer"}>
-            Discover
-          </Flex>
-          <Flex ml={4} _hover={{ color: "blue.500" }} cursor={"pointer"}>
-            Browser
-          </Flex>
-          <Flex ml={4} _hover={{ color: "blue.500" }} cursor={"pointer"}>
-            News
-          </Flex>
         </Flex>
       </Flex>
       <Flex
@@ -138,7 +133,7 @@ const SearchBar = () => {
             onClick={onToggle}
             minW={0}
           >
-            Discover
+            Home
             <Icon
               as={ChevronDownIcon}
               transition={"all .25s ease-in-out"}
