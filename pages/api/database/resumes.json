@@ -1,0 +1,91 @@
+[{
+    "resume_id": 1,
+    "name": "user",
+    "age": 20,
+    "user_id": 1,
+    "gender": "male",
+    "description": "Tôi là một người dùng thử nghiệm",
+    "reg_date": "2023-11-30 16:01:05"
+  },
+  {
+    "resume_id": 2,
+    "name": "admin",
+    "age": 25,
+    "user_id": 2,
+    "gender": "female",
+    "description": "Tôi là một quản trị viên",
+    "reg_date": "2023-11-30 16:01:05"
+  },
+  {
+    "resume_id": 3,
+    "name": "Nguyễn Văn A",
+    "age": 25,
+    "user_id": 3,
+    "gender": "male",
+    "description": "Tôi là một lập trình viên PHP có kinh nghiệm 3 năm",
+    "reg_date": "2023-11-30 16:01:05"
+  },
+  {
+    "resume_id": 4,
+    "name": "Trần Thị B",
+    "age": 22,
+    "user_id": 4,
+    "gender": "female",
+    "description": "Tôi là một nhà thiết kế đồ họa sáng tạo",
+    "reg_date": "2023-11-30 16:01:05"
+  },
+  {
+    "resume_id": 5,
+    "name": "Lê Văn C",
+    "age": 28,
+    "user_id": 5,
+    "gender": "male",
+    "description": "Tôi là một chuyên gia phân tích dữ liệu có khả năng làm việc với nhiều công cụ",
+    "reg_date": "2023-11-30 16:01:05"
+  },
+  {
+    "resume_id": 6,
+    "name": "Phạm Thị D",
+    "age": 24,
+    "user_id": 6,
+    "gender": "female",
+    "description": "Tôi là một giáo viên tiếng Anh có bằng cấp cao",
+    "reg_date": "2023-11-30 16:01:05"
+  },
+  {
+    "resume_id": 7,
+    "name": "Vũ Quang E",
+    "age": 26,
+    "user_id": 7,
+    "gender": "male",
+    "description": "Tôi là một kỹ sư cơ khí có kinh nghiệm thiết kế",
+    "reg_date": "2023-11-30 16:01:05"
+  },
+  {
+    "resume_id": 8,
+    "name": "Hoàng Thị F",
+    "age": 23,
+    "user_id": 8,
+    "gender": "female",
+    "description": "Tôi là một nhà báo có đam mê viết lách",
+    "reg_date": "2023-11-30 16:01:05"
+  },
+  {
+    "resume_id": 9,
+    "name": "Nguyễn Văn G",
+    "age": 27,
+    "user_id": 9,
+    "gender": "male",
+    "description": "Tôi là một nhà khoa học máy tính có nhiều bài báo quốc tế",
+    "reg_date": "2023-11-30 16:01:05"
+  },
+  {
+    "resume_id": 10,
+    "name": "Trần Thị H",
+    "age": 21,
+    "user_id": 10,
+    "gender": "female",
+    "description": "Tôi là một sinh viên năm cuối chuyên ngành kinh tế",
+    "reg_date": "2023-11-30 16:01:05"
+  }
+]
