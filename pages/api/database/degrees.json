@@ -1,0 +1,62 @@
+ [
+    {
+      "degree_id": 1,
+      "description": "Cử nhân Công nghệ thông tin",
+      "resume_id": 1,
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "degree_id": 2,
+      "description": "Thạc sĩ Quản trị kinh doanh",
+      "resume_id": 2,
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "degree_id": 3,
+      "description": "Kỹ sư Công nghệ phần mềm",
+      "resume_id": 3,
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "degree_id": 4,
+      "description": "Cử nhân Thiết kế đồ họa",
+      "resume_id": 4,
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "degree_id": 5,
+      "description": "Thạc sĩ Khoa học dữ liệu",
+      "resume_id": 5,
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "degree_id": 6,
+      "description": "Cử nhân Ngôn ngữ Anh",
+      "resume_id": 6,
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "degree_id": 7,
+      "description": "Kỹ sư Cơ khí",
+      "resume_id": 7,
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "degree_id": 8,
+      "description": "Cử nhân Báo chí",
+      "resume_id": 8,
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "degree_id": 9,
+      "description": "Tiến sĩ Khoa học máy tính",
+      "resume_id": 9,
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "degree_id": 10,
+      "description": "Cử nhân Kinh tế",
+      "resume_id": 10,
+      "reg_date": "2023-11-30 16:01:05"
+    }
+  ]

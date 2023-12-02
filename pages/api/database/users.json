@@ -1,0 +1,83 @@
+[
+    {
+      "user_id": 1,
+      "email": "user@gmail.com",
+      "password": "$2y$10$Z7xQ9F0bY1Q4w3gX7yL1aO1f8x5kq0dQf6j7z4I6Vj5Z9lY0yQl3W",
+      "user_level": "USER",
+      "name": "user",
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "user_id": 2,
+      "email": "admin@gmail.com",
+      "password": "$2y$10$R1yQ1F0bY1Q4w3gX7yL1aO1f8x5kq0dQf6j7z4I6Vj5Z9lY0yQl3W",
+      "user_level": "ADMIN",
+      "name": "admin",
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "user_id": 3,
+      "email": "nguyen@gmail.com",
+      "password": "$2y$10$S1yQ1F0bY1Q4w3gX7yL1aO1f8x5kq0dQf6j7z4I6Vj5Z9lY0yQl3W",
+      "user_level": "USER",
+      "name": "Nguyễn Văn A",
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "user_id": 4,
+      "email": "tran@gmail.com",
+      "password": "$2y$10$T1yQ1F0bY1Q4w3gX7yL1aO1f8x5kq0dQf6j7z4I6Vj5Z9lY0yQl3W",
+      "user_level": "USER",
+      "name": "Trần Thị B",
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "user_id": 5,
+      "email": "le@gmail.com",
+      "password": "$2y$10$L1yQ1F0bY1Q4w3gX7yL1aO1f8x5kq0dQf6j7z4I6Vj5Z9lY0yQl3W",
+      "user_level": "USER",
+      "name": "Lê Văn C",
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "user_id": 6,
+      "email": "pham@gmail.com",
+      "password": "$2y$10$P1yQ1F0bY1Q4w3gX7yL1aO1f8x5kq0dQf6j7z4I6Vj5Z9lY0yQl3W",
+      "user_level": "USER",
+      "name": "Phạm Thị D",
+      "reg_date": "2023-11-30 16:01:05"
+      
+    },
+    {
+      "user_id": 7,
+      "email": "vu@gmail.com",
+      "password": "$2y$10$V1yQ1F0bY1Q4w3gX7yL1aO1f8x5kq0dQf6j7z4I6Vj5Z9lY0yQl3W",
+      "user_level": "USER",
+      "name": "Vũ Quang E",
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "user_id": 8,
+      "email": "hoang@gmail.com",
+      "password": "$2y$10$H1yQ1F0bY1Q4w3gX7yL1aO1f8x5kq0dQf6j7z4I6Vj5Z9lY0yQl3W",
+      "user_level": "USER",
+      "name": "Hoàng Thị F",
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "user_id": 9,
+      "email": "nguyen2@gmail.com",
+      "password": "$2y$10$N1yQ1F0bY1Q4w3gX7yL1aO1f8x5kq0dQf6j7z4I6Vj5Z9lY0yQl3W",
+      "user_level": "USER",
+      "name": "Nguyễn Văn G",
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "user_id": 10,
+      "email": "tran2@gmail.com",
+      "password": "$2y$10$T2yQ1F0bY1Q4w3gX7yL1aO1f8x5kq0dQf6j7z4I6Vj5Z9lY0yQl3W",
+      "user_level": "USER",
+      "name": "Trần Thị H",
+      "reg_date": "2023-11-30 16:01:05"
+    }
+  ]
