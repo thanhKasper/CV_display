@@ -12,19 +12,17 @@ import {
 } from "@chakra-ui/react";
 import React, { useState, useContext } from "react";
 import { IoAddCircleOutline, IoHeart } from "react-icons/io5";
-import { IGameCard } from "../interface/IGameCard";
+import { Resume } from "../interface/IGameCard";
 import Link from "next/link";
 import WishlistContext from "@/context/WishlistContext";
 // import WishlistContext from "@/app/games/_components/_context/WishlistContext";
 
-export default function GameCard({
-  id,
+export default function ResumeCard({
+  resume_id,
   name,
   description,
-  price,
-  releaseDate,
-  genres,
-}: IGameCard) {
+
+}: Resume) {
   // const wishlistCtx = useWishlistContext();
   const wishlistCtx = useContext(WishlistContext);
 
@@ -33,7 +31,7 @@ export default function GameCard({
   };
 
   const [gameInWishlist, setGameInWishlist] = useState(
-    itemIsFavoriteHandler(id)
+    itemIsFavoriteHandler(resume_id)
   );
 
   const [showIcon, setShowIcon] = useState(false);
@@ -49,18 +47,18 @@ export default function GameCard({
   const toggleFavoriteStatusHandler = () => {
     console.log(gameInWishlist);
     if (gameInWishlist) {
-      wishlistCtx.removeFavorite(id);
+      wishlistCtx.removeFavorite(resume_id);
     } else {
-      console.log(`Add game ${id}`);
+      console.log(`Add resume ${resume_id}`);
       wishlistCtx.addFavorite({
-        id: id,
+        id: resume_id,
         name: name,
-        price: price,
+        price: 0,
       });
       console.log(wishlistCtx.favorites);
       console.log(gameInWishlist);
     }
-    setGameInWishlist(itemIsFavoriteHandler(id));
+    setGameInWishlist(itemIsFavoriteHandler(resume_id));
   };
   return (
     <Card
@@ -83,7 +81,7 @@ export default function GameCard({
           transition={"all 0.3s"}
         >
           <Button
-            onClick={toggleFavoriteStatusHandler}
+            // onClick={toggleFavoriteStatusHandler}
             bg={"transparent"}
             _hover={{ bg: "transperent" }}
             top={2}
@@ -106,12 +104,12 @@ export default function GameCard({
           </Button>
         </Tooltip>
       )}
-      <Link href={`/games/${id}`}>
+      <Link href={`/games/${resume_id}`}>
         <CardBody p={0} className="w-full">
           <AspectRatio ratio={3 / 2}>
             <Image
               alt="The last of my pizza"
-              src={`/img/${id}.webp`}
+              src={`/img/${resume_id}.webp`}
               borderRadius="lg"
               opacity={0.8}
               _hover={{ opacity: 1 }}
@@ -121,11 +119,11 @@ export default function GameCard({
         </CardBody>
         <CardFooter p={0} mt={2}>
           <Stack spacing={1}>
-            <Text textColor={"whiteAlpha.600"}>Base Game</Text>
+            <Text textColor={"whiteAlpha.600"}>{name}</Text>
             <Text textColor={"white"} className="font-bold">
-              {name}
+              {description}
             </Text>
-            <Text textColor={"white"}>${price}</Text>
+            {/* <Text textColor={"white"}>${price}</Text> */}
           </Stack>
         </CardFooter>
       </Link>

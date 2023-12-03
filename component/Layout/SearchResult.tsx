@@ -1,24 +1,27 @@
 
 import allGameDataAPI from "../AllGameAPI";
 import useGetAllGameApi from "@/app/games/_api/useGetAllGameApi";
-import { IGameCard } from "../interface/IGameCard";
+import { Resume } from "../interface/IGameCard";
 
-const searchGames = (query: string, allGameData: IGameCard[]): IGameCard[] => {
+const searchGames = (query: string, allReusumData: Resume[]): Resume[] => {
   
 
 
 
-  if (query==="") return allGameData;
-  const result: IGameCard[] = [];
+  if (query==="") return allReusumData;
+  const result: Resume[] = [];
   
   const filteredQuery = query.replace(/\s+/g, "").replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
   
-  for (const game of allGameData) {
-    const gameName = game.name.toLowerCase().replace(/\s+/g, "");
-    
-    if (gameName.includes(filteredQuery)) {
-      result.push(game);
+  for (const resume of allReusumData) {
+    const resumeName = resume.name.toLowerCase().replace(/\s+/g, "");
+    const resumeDecription = resume.description.toLowerCase().replace(/\s+/g, "");
+    if (resumeName.includes(filteredQuery)||resumeDecription.includes(filteredQuery)) {
+      result.push(resume);
     }
+
+  
+
   }
   
   return result;

@@ -26,15 +26,17 @@ export default function GameList() {
         <MobileNav display={{ base: "block", lg: "none" }} />
       </Flex>
       <SimpleGrid columns={{ base: 2, md: 4, lg: 5 }} spacing={5}>
-        {data?.map((game) => (
-          <Skeleton key={game.id} isLoaded={!isLoading}>
-            <GameCard
-              id={game.id}
-              name={game.name}
-              description={game.description}
-              price={game.price}
-              releaseDate={game.releaseDate}
-              genres={game.genres}
+        {data?.map((resume) => (
+          <Skeleton key={resume.resume_id} isLoaded={!isLoading}>
+<GameCard
+              resume_id={resume.resume_id}
+              name={resume.name}
+              description={resume.description}
+              age={resume.age}
+              user_id={resume.user_id}
+              gender={resume.gender}
+              language={resume.language}
+              reg_date={resume.reg_date}
             />
           </Skeleton>
         ))}

@@ -1,10 +1,11 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { IGameCard } from "../_interface/IGameCard";
+import { Resume } from "../_interface/IGameCard";
 
-const useGetAllGameApi = () => {
-  const url = "https://game-be-v2.vercel.app/games";
-  const [data, setData] = useState<IGameCard[]>();
+const useGetAllResumeAPI = () => {
+  const url = "https://synphylis.vercel.app/api/resume/";
+
+  const [data, setData] = useState<Resume[]>();
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
 
@@ -25,8 +26,8 @@ const useGetAllGameApi = () => {
 
     fetchData();
   }, [url]);
-
+  console.log(data)
   return [{ data, isLoading, isError }];
 };
 
-export default useGetAllGameApi;
+export default useGetAllResumeAPI;

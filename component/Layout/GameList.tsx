@@ -11,12 +11,10 @@ import MobileNav from "../ui/search/MobileNav";
 import ShowMenu from "../ui/search/ShowMenu";
 import GameCard from "./GameCard";
 import { searchResults } from "@/component/Layout/SearchBar";
-import { IGameCard } from "../interface/IGameCard";
+import { Resume } from "../interface/IGameCard";
 
 export default function GameList() {
-
-
-  const [data, setData]=useState(searchResults);
+  const [data, setData] = useState(searchResults);
 
   setInterval(function () {
     setData(searchResults);
@@ -25,8 +23,7 @@ export default function GameList() {
   //   setData(searchResults);
   // }, []);
 
-
-  const isLoading=false;
+  const isLoading = false;
   return (
     <Box w={"full"} p={0} mr={{ base: 0, lg: 10 }}>
       {/*header*/}
@@ -37,15 +34,17 @@ export default function GameList() {
         <MobileNav display={{ base: "block", lg: "none" }} />
       </Flex>
       <SimpleGrid columns={{ base: 2, md: 4, lg: 5 }} spacing={5}>
-        {data?.map((game) => (
-          <Skeleton key={game.id} isLoaded={!isLoading}>
+        {data?.map((resume) => (
+          <Skeleton key={resume.resume_id} isLoaded={!isLoading}>
             <GameCard
-              id={game.id}
-              name={game.name}
-              description={game.description}
-              price={game.price}
-              releaseDate={game.releaseDate}
-              genres={game.genres}
+              resume_id={resume.resume_id}
+              name={resume.name}
+              description={resume.description}
+              age={resume.age}
+              user_id={resume.user_id}
+              gender={resume.gender}
+              language={resume.language}
+              reg_date={resume.reg_date}
             />
           </Skeleton>
         ))}

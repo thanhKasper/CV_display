@@ -19,9 +19,9 @@ import { useRouter } from "next/navigation";
 import allGameDataAPI from "../AllGameAPI";
 import useGetAllGameApi from "@/app/games/_api/useGetAllGameApi";
 import searchGames from "./SearchResult";
-import { IGameCard } from "../interface/IGameCard";
+import { Resume } from "../interface/IGameCard";
 
-let searchResults: IGameCard[] = [];
+let searchResults: Resume[] = [];
 
 const SearchBar = () => {
   const { isOpen, onToggle } = useDisclosure();
