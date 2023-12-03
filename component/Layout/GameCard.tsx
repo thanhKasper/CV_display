@@ -104,7 +104,7 @@ export default function ResumeCard({
           </Button>
         </Tooltip>
       )}
-      <Link href={`/games/${resume_id}`}>
+      <Link href={`/resume/${resume_id}`}>
         <CardBody p={0} className="w-full">
           <AspectRatio ratio={3 / 2}>
             <Image
