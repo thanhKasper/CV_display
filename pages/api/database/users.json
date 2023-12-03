@@ -1,79 +1,83 @@
 [
-  {"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
-  {"type":"database","name":"myresume"},
-  {"type":"table","name":"users","database":"myresume","data":
-  [
-  {
-    "user_id":"1",
-    "email":"johndoe@gmail.com",
-    "password":"$2y$10$3UYEbe8TWnj5cmNnR6G8L.p.Ii9mh.dKef6h\/Y8xxiSj75bjkJw1.",
-    "user_level":"USER",
-    "reg_date":"2023-12-03 03:36:36"
-  },
-  {
-    "user_id":"2",
-    "email":"janesmith@gmail.com",
-    "password":"$2y$10$Z.TNlCm5ew16eWyGZ\/C\/Bu7KzDQdzPTTdVIfPaz8PsZLYxrQ4iqIG",
-    "user_level":"USER",
-    "reg_date":"2023-12-03 03:36:36"
-  },
-  {
-    "user_id":"3",
-    "email":"nguyenvana@gmail.com",
-    "password":"$2y$10$VH13S03x\/neX1YROT9ICDuM1xL5kv7.E0pmEylP04UnRvrwVikvny",
-    "user_level":"USER",
-    "reg_date":"2023-12-03 03:36:36"
-  },
-  {
-    "user_id":"4",
-    "email":"maryjohnson@gmail.com",
-    "password":"$2y$10$3J3rku0r1dWmlMA08\/oE2eakwl0FRpuPxmKWrW6e.zVZdnoY4IHlm",
-    "user_level":"USER",
-    "reg_date":"2023-12-03 03:36:36"
-  },
-  {
-    "user_id":"5",
-    "email":"tranhoanhau@gmail.com",
-    "password":"$2y$10$3jJpV0h1ViJaV0iBws0zw.DgNAsqLsVSuWw4C4EoTuM1oWWWbIdLK",
-    "user_level":"USER",
-    "reg_date":"2023-12-03 03:36:36"
-  },
-  {
-    "user_id":"6",
-    "email":"robertwilson@gmail.com",
-    "password":"$2y$10$x\/0c0USg1Mwc3v4J6L5K1.AfYPu215PQR4fCxdpf8Yg20lyIExnXe",
-    "user_level":"USER",
-    "reg_date":"2023-12-03 03:36:36"
-  },
-  {
-    "user_id":"7",
-    "email":"lengocdieu@gmail.com",
-    "password":"$2y$10$5MX0JjPpx634zGpFfreiHuIDWOUcdAhnNlBq39AL.UWzXyfP.apUe",
-    "user_level":"USER",
-    "reg_date":"2023-12-03 03:36:36"
-  },
-  {
-    "user_id":"8",
-    "email":"lindadavis@gmail.com",
-    "password":"$2y$10$nMF61l5jG\/62Q4c7u1Jkx.7K0r8EdOtoYmDHyTfETXV8qRF5I1PhG",
-    "user_level":"USER",
-    "reg_date":"2023-12-03 03:36:36"
-  },
-  {
-    "user_id":"9",
-    "email":"michaellee@gmail.com",
-    "password":"$2y$10$2ebrwgh5AbR2asaKh.UjJOArAbmJOP9Cxd.AjgHKbjKP0DJat84ey",
-    "user_level":"USER",
-    "reg_date":"2023-12-03 03:36:36"
-  },
-  {
-    "user_id":"10",
-    "email":"susanbrown@gmail.com",
-    "password":"$2y$10$QyChB0lf06VzO23q966NeOmvuNZsGoQTgVzKFhSIUWF7.bofNTi3a",
-    "user_level":"USER",
-    "reg_date":"2023-12-03 03:36:36"
-  }
+    {
+      "user_id": 1,
+      "email": "user@gmail.com",
+      "password": "$2y$10$Z7xQ9F0bY1Q4w3gX7yL1aO1f8x5kq0dQf6j7z4I6Vj5Z9lY0yQl3W",
+      "user_level": "USER",
+      "name": "user",
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "user_id": 2,
+      "email": "admin@gmail.com",
+      "password": "$2y$10$R1yQ1F0bY1Q4w3gX7yL1aO1f8x5kq0dQf6j7z4I6Vj5Z9lY0yQl3W",
+      "user_level": "ADMIN",
+      "name": "admin",
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "user_id": 3,
+      "email": "nguyen@gmail.com",
+      "password": "$2y$10$S1yQ1F0bY1Q4w3gX7yL1aO1f8x5kq0dQf6j7z4I6Vj5Z9lY0yQl3W",
+      "user_level": "USER",
+      "name": "Nguyễn Văn A",
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "user_id": 4,
+      "email": "tran@gmail.com",
+      "password": "$2y$10$T1yQ1F0bY1Q4w3gX7yL1aO1f8x5kq0dQf6j7z4I6Vj5Z9lY0yQl3W",
+      "user_level": "USER",
+      "name": "Trần Thị B",
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "user_id": 5,
+      "email": "le@gmail.com",
+      "password": "$2y$10$L1yQ1F0bY1Q4w3gX7yL1aO1f8x5kq0dQf6j7z4I6Vj5Z9lY0yQl3W",
+      "user_level": "USER",
+      "name": "Lê Văn C",
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "user_id": 6,
+      "email": "pham@gmail.com",
+      "password": "$2y$10$P1yQ1F0bY1Q4w3gX7yL1aO1f8x5kq0dQf6j7z4I6Vj5Z9lY0yQl3W",
+      "user_level": "USER",
+      "name": "Phạm Thị D",
+      "reg_date": "2023-11-30 16:01:05"
+      
+    },
+    {
+      "user_id": 7,
+      "email": "vu@gmail.com",
+      "password": "$2y$10$V1yQ1F0bY1Q4w3gX7yL1aO1f8x5kq0dQf6j7z4I6Vj5Z9lY0yQl3W",
+      "user_level": "USER",
+      "name": "Vũ Quang E",
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "user_id": 8,
+      "email": "hoang@gmail.com",
+      "password": "$2y$10$H1yQ1F0bY1Q4w3gX7yL1aO1f8x5kq0dQf6j7z4I6Vj5Z9lY0yQl3W",
+      "user_level": "USER",
+      "name": "Hoàng Thị F",
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "user_id": 9,
+      "email": "nguyen2@gmail.com",
+      "password": "$2y$10$N1yQ1F0bY1Q4w3gX7yL1aO1f8x5kq0dQf6j7z4I6Vj5Z9lY0yQl3W",
+      "user_level": "USER",
+      "name": "Nguyễn Văn G",
+      "reg_date": "2023-11-30 16:01:05"
+    },
+    {
+      "user_id": 10,
+      "email": "tran2@gmail.com",
+      "password": "$2y$10$T2yQ1F0bY1Q4w3gX7yL1aO1f8x5kq0dQf6j7z4I6Vj5Z9lY0yQl3W",
+      "user_level": "USER",
+      "name": "Trần Thị H",
+      "reg_date": "2023-11-30 16:01:05"
+    }
   ]
-  }
-]
-  
