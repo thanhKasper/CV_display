@@ -31,6 +31,7 @@ export default function GamePage({ params }: { params: { id: string } }) {
       setNumber(3);
     }
   };
+  
   const isLogin = getFromLocalStorage("access_token") != null;
   console.log(getFromLocalStorage("access_token"));
   return (
