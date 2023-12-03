@@ -1,91 +1,108 @@
-[{
-    "resume_id": 1,
-    "name": "user",
-    "age": 20,
-    "user_id": 1,
-    "gender": "male",
-    "description": "Tôi là một người dùng thử nghiệm",
-    "reg_date": "2023-11-30 16:01:05"
+[
+  {"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+  {"type":"database","name":"myresume"},
+  {"type":"table","name":"resumes","database":"myresume","data":
+  [
+  {
+    "resume_id":"1",
+    "name":"John Doe",
+    "age":"28",
+    "user_id":"1",
+    "gender":"Female",
+    "description":"Software Developer",
+    "language":"English",
+    "reg_date":"2023-12-03 03:36:43"
   },
   {
-    "resume_id": 2,
-    "name": "admin",
-    "age": 25,
-    "user_id": 2,
-    "gender": "female",
-    "description": "Tôi là một quản trị viên",
-    "reg_date": "2023-11-30 16:01:05"
+    "resume_id":"2",
+    "name":"Jane Smith",
+    "age":"32",
+    "user_id":"2",
+    "gender":"Male",
+    "description":"Data Analyst",
+    "language":"Spanish",
+    "reg_date":"2023-12-03 03:36:43"
   },
   {
-    "resume_id": 3,
-    "name": "Nguyễn Văn A",
-    "age": 25,
-    "user_id": 3,
-    "gender": "male",
-    "description": "Tôi là một lập trình viên PHP có kinh nghiệm 3 năm",
-    "reg_date": "2023-11-30 16:01:05"
+    "resume_id":"3",
+    "name":"Nguyễn Văn A",
+    "age":"25",
+    "user_id":"3",
+    "gender":"Male",
+    "description":"Web Developer",
+    "language":"Vietnamese",
+    "reg_date":"2023-12-03 03:36:43"
   },
   {
-    "resume_id": 4,
-    "name": "Trần Thị B",
-    "age": 22,
-    "user_id": 4,
-    "gender": "female",
-    "description": "Tôi là một nhà thiết kế đồ họa sáng tạo",
-    "reg_date": "2023-11-30 16:01:05"
+    "resume_id":"4",
+    "name":"Mary Johnson",
+    "age":"30",
+    "user_id":"4",
+    "gender":"Female",
+    "description":"Graphic Designer",
+    "language":"French",
+    "reg_date":"2023-12-03 03:36:43"
   },
   {
-    "resume_id": 5,
-    "name": "Lê Văn C",
-    "age": 28,
-    "user_id": 5,
-    "gender": "male",
-    "description": "Tôi là một chuyên gia phân tích dữ liệu có khả năng làm việc với nhiều công cụ",
-    "reg_date": "2023-11-30 16:01:05"
+    "resume_id":"5",
+    "name":"Trần Hoàn Hậu",
+    "age":"29",
+    "user_id":"5",
+    "gender":"Male",
+    "description":"Marketing Manager",
+    "language":"Vietnamese",
+    "reg_date":"2023-12-03 03:36:43"
   },
   {
-    "resume_id": 6,
-    "name": "Phạm Thị D",
-    "age": 24,
-    "user_id": 6,
-    "gender": "female",
-    "description": "Tôi là một giáo viên tiếng Anh có bằng cấp cao",
-    "reg_date": "2023-11-30 16:01:05"
+    "resume_id":"6",
+    "name":"Robert Wilson",
+    "age":"27",
+    "user_id":"6",
+    "gender":"Female",
+    "description":"UX Designer",
+    "language":"Chinese",
+    "reg_date":"2023-12-03 03:36:43"
   },
   {
-    "resume_id": 7,
-    "name": "Vũ Quang E",
-    "age": 26,
-    "user_id": 7,
-    "gender": "male",
-    "description": "Tôi là một kỹ sư cơ khí có kinh nghiệm thiết kế",
-    "reg_date": "2023-11-30 16:01:05"
+    "resume_id":"7",
+    "name":"Lê Ngọc Diệu",
+    "age":"31",
+    "user_id":"7",
+    "gender":"Male",
+    "description":"Project Manager",
+    "language":"Vietnamese",
+    "reg_date":"2023-12-03 03:36:43"
   },
   {
-    "resume_id": 8,
-    "name": "Hoàng Thị F",
-    "age": 23,
-    "user_id": 8,
-    "gender": "female",
-    "description": "Tôi là một nhà báo có đam mê viết lách",
-    "reg_date": "2023-11-30 16:01:05"
+    "resume_id":"8",
+    "name":"Linda Davis",
+    "age":"26",
+    "user_id":"8",
+    "gender":"Female",
+    "description":"Software Engineer",
+    "language":"Korean",
+    "reg_date":"2023-12-03 03:36:43"},
+  {
+    "resume_id":"9",
+    "name":"Michael Lee",
+    "age":"33",
+    "user_id":"9",
+    "gender":"Male",
+    "description":"Data Scientist",
+    "language":"Italian",
+    "reg_date":"2023-12-03 03:36:43"
   },
   {
-    "resume_id": 9,
-    "name": "Nguyễn Văn G",
-    "age": 27,
-    "user_id": 9,
-    "gender": "male",
-    "description": "Tôi là một nhà khoa học máy tính có nhiều bài báo quốc tế",
-    "reg_date": "2023-11-30 16:01:05"
-  },
-  {
-    "resume_id": 10,
-    "name": "Trần Thị H",
-    "age": 21,
-    "user_id": 10,
-    "gender": "female",
-    "description": "Tôi là một sinh viên năm cuối chuyên ngành kinh tế",
-    "reg_date": "2023-11-30 16:01:05"
+    "resume_id":"10",
+    "name":"Susan Brown",
+    "age":"29",
+    "user_id":"10",
+    "gender":"Female",
+    "description":"HR Specialist",
+    "language":"Russian",
+    "reg_date":"2023-12-03 03:36:43"
+  }
+  ]
   }
 ]
+  
