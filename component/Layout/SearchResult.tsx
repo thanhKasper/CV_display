@@ -1,6 +1,5 @@
 
-import allGameDataAPI from "../AllGameAPI";
-import useGetAllGameApi from "@/app/games/_api/useGetAllGameApi";
+
 import { Resume } from "../Interface/IGameCard";
 
 const searchGames = (query: string, allReusumData: Resume[]): Resume[] => {

@@ -16,7 +16,7 @@ import {
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import allGameDataAPI from "../AllGameAPI";
+
 import useGetAllGameApi from "@/app/games/_api/useGetAllGameApi";
 import searchGames from "./SearchResult";
 import { Resume } from "../Interface/IGameCard";
@@ -29,7 +29,7 @@ const SearchBar = () => {
   const [search, openSearch] = useState(false);
   const [query, setQuery] = useState("");
   const [{ data, isLoading, isError }] = useGetAllGameApi();
-  const [allGameData, images] = allGameDataAPI();
+
   const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === "Enter") {
       // router.refresh();

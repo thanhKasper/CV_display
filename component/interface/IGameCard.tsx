@@ -8,3 +8,4 @@ export interface Resume {
   language: string;
   reg_date: string;
 }
+//lỗi
