@@ -15,7 +15,7 @@ const MobileNav = ({ ...rest }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box>
-      <Drawer
+      {/* <Drawer
         isOpen={isOpen}
         placement="left"
         onClose={onClose}
@@ -28,7 +28,7 @@ const MobileNav = ({ ...rest }) => {
             display={{ base: "block", lg: "none" }}
           />
         </DrawerContent>
-      </Drawer>
+      </Drawer> */}
       <Flex
         height="fix-content"
         alignItems="right"
