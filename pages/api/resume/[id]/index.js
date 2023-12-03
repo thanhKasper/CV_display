@@ -1,16 +1,18 @@
-// Import axios to fetch data from api
+
 
 import resumedata from '../../database/resumes.json';
 import phonedata from '../../database/phones.json';
 import degreedata from '../../database/degrees.json';
 import userdata from '../../database/users.json';
 import languagedata from '../../database/language.json'
-// Export a default function to handle api route
+
 export default async function handler(req, res) {
-  // Get the id from the query
+
   const { id } = req.query;
 
-
+  res.setHeader("Access-Control-Allow-Origin", "*"); 
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS"); 
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization"); 
   
   const resume = resumedata.find((item) => item.resume_id == id);
   const user = userdata.find((item) => item.user_id == id);
