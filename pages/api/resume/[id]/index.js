@@ -4,6 +4,7 @@ import resumedata from '../../database/resumes.json';
 import phonedata from '../../database/phones.json';
 import degreedata from '../../database/degrees.json';
 import userdata from '../../database/users.json';
+import languagedata from '../../database/language.json'
 // Export a default function to handle api route
 export default async function handler(req, res) {
   // Get the id from the query
@@ -21,9 +22,10 @@ export default async function handler(req, res) {
     gender: resume.gender,
     description: resume.description,
     phone_number: [],
-    reg_date: resume.reg_date,
     email: user.email,
     degree: [],
+    language: [],
+    reg_date: resume.reg_date,
   };
   let phoneNumbers = phonedata.filter(
     (phone) => phone.resume_id === resume.resume_id
@@ -41,8 +43,13 @@ export default async function handler(req, res) {
     resumeInfo.degree.push(degreeID.description);
   }
 
-  
+  let language = languagedata.filter(
+    (languageID) => languageID.resume_id === resume.resume_id
+  );
 
+  for (let languageID of language) {
+    resumeInfo.language.push(languageID.description);
+  }
 
   res.json(resumeInfo);
 }
