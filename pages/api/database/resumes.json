@@ -77,16 +77,7 @@
     "description":"Software Engineer",
     "language":"Korean",
     "reg_date":"2023-12-03 03:36:43"},
-  {
-    "resume_id":9,
-    "name":"Michael Lee",
-    "age":"33",
-    "user_id":9,
-    "gender":"Male",
-    "description":"Data Scientist",
-    "language":"Italian",
-    "reg_date":"2023-12-03 03:36:43"
-  },
+
   {
     "resume_id": 9,
     "name": "Nguyễn Văn G",
