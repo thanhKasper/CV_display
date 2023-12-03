@@ -69,7 +69,7 @@ const SearchBar = () => {
         display={{ base: "none", md: "flex" }}
       >
         <Flex width="75vw" alignItems={"center"}>
-          <Flex mr={4} _hover={{ color: "blue.500" }} cursor={"pointer"} fontSize={"xl"} fontWeight={"800"}>
+          <Flex mr={4} _hover={{ color: "blue.500" }} cursor={"pointer"} fontSize={"xl"} fontWeight={"800"} onClick={()=> router.push("/")}>
             Home
           </Flex>
           <Input
