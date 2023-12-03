@@ -15,7 +15,7 @@ import GameImages from "./_components/GameImages";
 import BuyGame from "./_components/BuyGame";
 import GameDescription from "./_components/GameDescription";
 import useGameGetIdApi from "./_api/useGameIdApi";
-import CommentSection from "./_components/CommentSection";
+
 
 
 export default function GamePage({ params }: { params: { id: string } }) {
@@ -90,19 +90,6 @@ export default function GamePage({ params }: { params: { id: string } }) {
                       {show ? "Show less" : "Show more"}
                     </Text>
                   </Flex>
-                  <SimpleGrid columns={{ base: 1, md: 3 }} spacing={5}>
-                    {data.ratings.slice(0, number).map((rating) => (
-                      <CommentSection
-                        key={rating.id}
-                        id={rating.id}
-                        comment={rating.comment}
-                        ratingStar={rating.ratingStar}
-                        ratingDateTIme={rating.ratingDateTIme}
-                        user={rating.user}
-                      />
-                    ))}
-                  </SimpleGrid>
-
     
                 </Skeleton>
               </GridItem>
