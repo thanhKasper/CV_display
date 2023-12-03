@@ -9,7 +9,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import React from "react";
-import SidebarContent from "./SidebarContent";
+
 
 const MobileNav = ({ ...rest }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
