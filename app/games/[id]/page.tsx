@@ -16,7 +16,7 @@ import BuyGame from "./_components/BuyGame";
 import GameDescription from "./_components/GameDescription";
 import useGameGetIdApi from "./_api/useGameIdApi";
 import CommentSection from "./_components/CommentSection";
-import AddComment from "./_components/AddComment";
+
 
 export default function GamePage({ params }: { params: { id: string } }) {
   const [show, setShow] = React.useState(false);
@@ -103,9 +103,7 @@ export default function GamePage({ params }: { params: { id: string } }) {
                     ))}
                   </SimpleGrid>
 
-                  {/* Add comment */}
-
-                  {<AddComment gameId={data.id} />}
+    
                 </Skeleton>
               </GridItem>
             </SimpleGrid>

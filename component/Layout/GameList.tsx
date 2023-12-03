@@ -7,11 +7,11 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React, { useState, useEffect } from "react";
-import MobileNav from "./MobileNav";
-import ShowMenu from "./ShowMenu";
+import MobileNav from "../ui/search/MobileNav";
+import ShowMenu from "../ui/search/ShowMenu";
 import GameCard from "./GameCard";
 import { searchResults } from "@/component/Layout/SearchBar";
-import { IGameCard } from "../../interface/IGameCard";
+import { IGameCard } from "../interface/IGameCard";
 
 export default function GameList() {
 

@@ -10,7 +10,7 @@ import React, {useState, useEffect} from "react";
 import useGetAllGameApi from "../../../app/games/_api/useGetAllGameApi";
 import { IGameCard } from "@/component/interface/IGameCard";
 import axios from "axios";
-import GameCard from "./GameCard";
+import GameCard from "../../Layout/GameCard";
 import ShowMenu from "./ShowMenu";
 import MobileNav from "./MobileNav";
 
