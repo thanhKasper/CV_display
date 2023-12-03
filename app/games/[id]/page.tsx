@@ -75,7 +75,7 @@ export default function GamePage({ params }: { params: { id: string } }) {
   return (
     <>
       {!data ? (
-        <p className="">There are some errors, please reload the page</p>
+        <p className="">There are some network errors, please wait for the page to load</p>
       ) : (
         <div className="m-auto mt-10 w-[80vw]">
           <PDFViewer style={{ width: "80vw", height: "80vh" }}>
