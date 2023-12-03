@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import React, { useState, useContext } from "react";
 import { IoAddCircleOutline, IoHeart } from "react-icons/io5";
-import { Resume } from "../interface/IGameCard";
+import { Resume } from "../Interface/IGameCard";
 import Link from "next/link";
 import WishlistContext from "@/context/WishlistContext";
 // import WishlistContext from "@/app/games/_components/_context/WishlistContext";

@@ -19,7 +19,7 @@ import { useRouter } from "next/navigation";
 import allGameDataAPI from "../AllGameAPI";
 import useGetAllGameApi from "@/app/games/_api/useGetAllGameApi";
 import searchGames from "./SearchResult";
-import { Resume } from "../interface/IGameCard";
+import { Resume } from "../Interface/IGameCard";
 
 let searchResults: Resume[] = [];
 

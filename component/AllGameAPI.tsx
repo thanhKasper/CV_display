@@ -1,14 +1,14 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { get } from "http";
-import { IGameCard } from "./interface/IGameCard";
+import { Resume } from "./Interface/IGameCard";
 
 
 
 const allGameDataAPI = () => {
   const url = "https://game-be-v2.vercel.app/games";
-  const [allGameData, setAllGameData] = useState<IGameCard[]>([]);
-  const [images, setImages] = useState<IGameCard[]>([]);
+  const [allGameData, setAllGameData] = useState<Resume[]>([]);
+  const [images, setImages] = useState<Resume[]>([]);
 
 
   useEffect(() => {
@@ -16,7 +16,7 @@ const allGameDataAPI = () => {
     
         try {
           const response = await axios.get(url)
-          const gameData: IGameCard[] = response.data;
+          const gameData: Resume[] = response.data;
           setAllGameData(gameData);
           setImages(gameData.slice(0, 5))
         } catch (error) {

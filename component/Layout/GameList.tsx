@@ -11,7 +11,7 @@ import MobileNav from "../ui/search/MobileNav";
 import ShowMenu from "../ui/search/ShowMenu";
 import GameCard from "./GameCard";
 import { searchResults } from "@/component/Layout/SearchBar";
-import { Resume } from "../interface/IGameCard";
+import { Resume } from "../Interface/IGameCard";
 
 export default function GameList() {
   const [data, setData] = useState(searchResults);
