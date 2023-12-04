@@ -17,7 +17,7 @@ import {
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
-import useGetAllGameApi from "@/app/resume/_api/useGetAllGameApi";
+import useGetAllGameApi from "@/app/resume/_api/useGetAllResumeApi";
 import searchGames from "./SearchResult";
 import { Resume } from "../Interface/IGameCard";
 

@@ -10,7 +10,7 @@ import React, { useState, useEffect } from "react";
 import MobileNav from "../ui/search/MobileNav";
 import ShowMenu from "../ui/search/ShowMenu";
 import GameCard from "../Layout/GameCard";
-import useGetAllGameApi from "@/app/resume/_api/useGetAllGameApi";
+import useGetAllGameApi from "@/app/resume/_api/useGetAllResumeApi";
 
 
 export default function GameList() {
