@@ -9,7 +9,7 @@ import {
 import React, { useState, useEffect } from "react";
 import MobileNav from "../ui/search/MobileNav";
 import ShowMenu from "../ui/search/ShowMenu";
-import GameCard from "./GameCard";
+import GameCard from "./ResumeCard";
 import { searchResults } from "@/component/Layout/SearchBar";
 import { Resume } from "../Interface/IGameCard";
 

@@ -9,7 +9,7 @@ import {
 import React, { useState, useEffect } from "react";
 import MobileNav from "../ui/search/MobileNav";
 import ShowMenu from "../ui/search/ShowMenu";
-import GameCard from "../Layout/GameCard";
+import GameCard from "../Layout/ResumeCard";
 import useGetAllGameApi from "@/app/resume/_api/useGetAllResumeApi";
 
 
@@ -31,6 +31,9 @@ export default function GameList() {
 <GameCard
               resume_id={resume.resume_id}
               name={resume.name}
+
+
+              
               description={resume.description}
               age={resume.age}
               user_id={resume.user_id}
