@@ -16,7 +16,8 @@ const useResumeGetIdApi = (resumeID: string) => {
       setIsLoading(true);
 
       try {
-        const result = await axios(url);
+        const result = await axios.get(url);
+        console.log(result)
 
         setData(result.data);
       } catch (error) {
