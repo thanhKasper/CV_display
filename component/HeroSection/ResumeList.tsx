@@ -9,9 +9,8 @@ import {
 import React, { useState, useEffect } from "react";
 import MobileNav from "../ui/search/MobileNav";
 import ShowMenu from "../ui/search/ShowMenu";
-import GameCard from "../Layout/GameCard";
-import useGetAllGameApi from "@/app/resume/_api/useGetAllGameApi";
-
+import GameCard from "../Layout/ResumeCard";
+import useGetAllGameApi from "@/app/resume/_api/useGetAllResumeApi";
 
 export default function GameList() {
   const [{ data, isLoading, isError }] = useGetAllGameApi();
@@ -26,9 +25,9 @@ export default function GameList() {
         <MobileNav display={{ base: "block", lg: "none" }} />
       </Flex>
       <SimpleGrid columns={{ base: 2, md: 4, lg: 5 }} spacing={5}>
-        {data?.map((resume) => (
+        {data?.map(resume => (
           <Skeleton key={resume.resume_id} isLoaded={!isLoading}>
-<GameCard
+            <GameCard
               resume_id={resume.resume_id}
               name={resume.name}
               description={resume.description}

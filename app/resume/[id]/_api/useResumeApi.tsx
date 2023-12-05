@@ -5,7 +5,7 @@ import { ResumeInfo } from "../_interface/ResumeInfo";
 
 const useResumeGetIdApi = (resumeID: string) => {
 
-  const url = "https://synphylis.vercel.app/api/resume/" + resumeID;
+  const url = "http://localhost:3000/resume/" + resumeID;
   const [data, setData] = useState<ResumeInfo>();
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);

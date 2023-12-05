@@ -17,9 +17,9 @@ import {
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
-import useGetAllGameApi from "@/app/resume/_api/useGetAllGameApi";
+import useGetAllResumeAPI from "@/app/resume/_api/useGetAllResumeApi";
 import searchGames from "./SearchResult";
-import { Resume } from "../Interface/IGameCard";
+import { Resume } from "../Interface/IResumeCard";
 
 let searchResults: Resume[] = [];
 
@@ -28,7 +28,7 @@ const SearchBar = () => {
   const [isSet, onSet] = useState(false);
   const [search, openSearch] = useState(false);
   const [query, setQuery] = useState("");
-  const [{ data, isLoading, isError }] = useGetAllGameApi();
+  const [{ data, isLoading, isError }] = useGetAllResumeAPI();
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === "Enter") {
@@ -69,7 +69,14 @@ const SearchBar = () => {
         display={{ base: "none", md: "flex" }}
       >
         <Flex width="75vw" alignItems={"center"}>
-          <Flex mr={4} _hover={{ color: "blue.500" }} cursor={"pointer"} fontSize={"xl"} fontWeight={"800"} onClick={()=> router.push("/")}>
+          <Flex
+            mr={4}
+            _hover={{ color: "blue.500" }}
+            cursor={"pointer"}
+            fontSize={"xl"}
+            fontWeight={"800"}
+            onClick={() => router.push("/")}
+          >
             Home
           </Flex>
           <Input

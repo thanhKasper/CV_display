@@ -1,7 +1,7 @@
 data = [
     {
         id: 1,
-        name: "NVA",
+        name: "Nguyen Van A",
         age: 19,
         gender: "Male",
         phone: ["4789327178", "0192875924"],
@@ -10,19 +10,19 @@ data = [
     },
     {
         id: 2,
-        name: "NVA",
-        age: 19,
+        name: "Tran Hung D",
+        age: 23,
         gender: "Male",
-        phone: ["4789327178", "0192875924"],
+        phone: ["3289327178", "01234875924"],
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo, eros vel imperdiet mattis, lacus felis molestie augue, vel aliquam massa purus quis enim. In hac habitasse platea dictumst. Sed hendrerit velit sed ante semper fermentum. Nam ornare sodales volutpat. Morbi laoreet dui quis sem tempor, id eleifend quam posuere. Donec finibus odio mattis est pharetra lacinia in sit amet metus. Integer molestie quis leo et pellentesque. Nam consequat justo at malesuada interdum. Integer porta urna orci, sit amet pretium velit sodales quis. Ut suscipit blandit ipsum, nec blandit velit pulvinar pretium. Nam hendrerit ullamcorper justo quis finibus. Sed nunc massa, elementum quis orci efficitur, porta porta urna. Curabitur ac pulvinar orci.",
         degree: ["Bachelor of Computer Science", "Comptia A+", "Web Developer"]
     },
     {
         id: 3,
-        name: "NVA",
-        age: 19,
-        gender: "Male",
-        phone: ["4789327178", "0192875924"],
+        name: "Phan Thi N",
+        age: 29,
+        gender: "Female",
+        phone: ["4789286178", "0192875924"],
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo, eros vel imperdiet mattis, lacus felis molestie augue, vel aliquam massa purus quis enim. In hac habitasse platea dictumst. Sed hendrerit velit sed ante semper fermentum. Nam ornare sodales volutpat. Morbi laoreet dui quis sem tempor, id eleifend quam posuere. Donec finibus odio mattis est pharetra lacinia in sit amet metus. Integer molestie quis leo et pellentesque. Nam consequat justo at malesuada interdum. Integer porta urna orci, sit amet pretium velit sodales quis. Ut suscipit blandit ipsum, nec blandit velit pulvinar pretium. Nam hendrerit ullamcorper justo quis finibus. Sed nunc massa, elementum quis orci efficitur, porta porta urna. Curabitur ac pulvinar orci.",
         degree: ["Bachelor of Computer Science", "Comptia A+", "Web Developer"]
     },

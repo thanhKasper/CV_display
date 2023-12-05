@@ -9,11 +9,11 @@ import {
 import React, { useState, useEffect } from "react";
 import MobileNav from "../ui/search/MobileNav";
 import ShowMenu from "../ui/search/ShowMenu";
-import GameCard from "./GameCard";
+import ResumeCard from "./ResumeCard";
 import { searchResults } from "@/component/Layout/SearchBar";
-import { Resume } from "../Interface/IGameCard";
+// import { Resume } from "../Interface/IResumeCard";
 
-export default function GameList() {
+export default function CVList() {
   const [data, setData] = useState(searchResults);
 
   setInterval(function () {
@@ -34,9 +34,9 @@ export default function GameList() {
         <MobileNav display={{ base: "block", lg: "none" }} />
       </Flex>
       <SimpleGrid columns={{ base: 2, md: 4, lg: 5 }} spacing={5}>
-        {data?.map((resume) => (
+        {data?.map(resume => (
           <Skeleton key={resume.resume_id} isLoaded={!isLoading}>
-            <GameCard
+            <ResumeCard
               resume_id={resume.resume_id}
               name={resume.name}
               description={resume.description}

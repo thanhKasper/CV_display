@@ -12,22 +12,17 @@ import {
 } from "@chakra-ui/react";
 import React, { useState, useContext } from "react";
 import { IoAddCircleOutline, IoHeart } from "react-icons/io5";
-import { Resume } from "../Interface/IGameCard";
+import { Resume } from "../Interface/IResumeCard";
 import Link from "next/link";
 import WishlistContext from "@/context/WishlistContext";
 // import WishlistContext from "@/app/games/_components/_context/WishlistContext";
 
-export default function ResumeCard({
-  resume_id,
-  name,
-  description,
-
-}: Resume) {
+export default function ResumeCard({ resume_id, name, description }: Resume) {
   // const wishlistCtx = useWishlistContext();
   const wishlistCtx = useContext(WishlistContext);
 
   const itemIsFavoriteHandler = (favoriteId: number) => {
-    return wishlistCtx.favorites.some((game) => game.id === favoriteId);
+    return wishlistCtx.favorites.some(game => game.id === favoriteId);
   };
 
   const [gameInWishlist, setGameInWishlist] = useState(
@@ -109,7 +104,7 @@ export default function ResumeCard({
           <AspectRatio ratio={3 / 2}>
             <Image
               alt="The last of my pizza"
-              src={`/img/${resume_id}.webp`}
+              src={`https://marketplace.canva.com/EAFRuCp3DcY/1/0/1131w/canva-black-white-minimalist-cv-resume-f5JNR-K5jjw.jpg`}
               borderRadius="lg"
               opacity={0.8}
               _hover={{ opacity: 1 }}

@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import { Resume } from "../_interface/IGameCard";
 
 const useGetAllResumeAPI = () => {
-  const url = "https://synphylis.vercel.app/api/resume/";
+  const url = "http://localhost:3000/api/resume";
+
 
   const [data, setData] = useState<Resume[]>();
   const [isLoading, setIsLoading] = useState(false);
