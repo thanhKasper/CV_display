@@ -16,7 +16,6 @@ import {
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-
 import useGetAllResumeAPI from "@/app/resume/_api/useGetAllResumeApi";
 import searchGames from "./SearchResult";
 import { Resume } from "../Interface/IResumeCard";

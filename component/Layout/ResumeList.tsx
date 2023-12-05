@@ -9,12 +9,21 @@ import {
 import React, { useState, useEffect } from "react";
 import MobileNav from "../ui/search/MobileNav";
 import ShowMenu from "../ui/search/ShowMenu";
-import GameCard from "../Layout/ResumeCard";
-import useGetAllResumeAPI from "@/app/resume/_api/useGetAllResumeApi";
+import ResumeCard from "./ResumeCard";
+import { searchResults } from "@/component/Layout/SearchBar";
+// import { Resume } from "../Interface/IResumeCard";
 
-export default function GameList() {
-  const [{ data, isLoading, isError }] = useGetAllResumeAPI();
+export default function CVList() {
+  const [data, setData] = useState(searchResults);
 
+  setInterval(function () {
+    setData(searchResults);
+  }, 300);
+  // useEffect(()=> {
+  //   setData(searchResults);
+  // }, []);
+
+  const isLoading = false;
   return (
     <Box w={"full"} p={0} mr={{ base: 0, lg: 10 }}>
       {/*header*/}
@@ -27,12 +36,9 @@ export default function GameList() {
       <SimpleGrid columns={{ base: 2, md: 4, lg: 5 }} spacing={5}>
         {data?.map(resume => (
           <Skeleton key={resume.resume_id} isLoaded={!isLoading}>
-            <GameCard
+            <ResumeCard
               resume_id={resume.resume_id}
               name={resume.name}
-
-
-              
               description={resume.description}
               age={resume.age}
               user_id={resume.user_id}

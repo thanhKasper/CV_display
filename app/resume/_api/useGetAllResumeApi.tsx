@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Resume } from "../_interface/IGameCard";
+import { Resume } from "../_interface/IResumeCard";
 
 const useGetAllResumeAPI = () => {
   const url = "http://localhost:3000/api/resume";
