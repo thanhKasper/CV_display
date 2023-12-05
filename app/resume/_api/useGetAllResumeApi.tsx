@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Resume } from "../_interface/IResumeCard";
 
 const useGetAllResumeAPI = () => {
-  const url = "http://localhost:3000/api/resume";
+  const url = "https://synphylis.vercel.app/api/resume";
 
 
   const [data, setData] = useState<Resume[]>();
