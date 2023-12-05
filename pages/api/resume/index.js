@@ -5,15 +5,15 @@ import NextCors from 'nextjs-cors';
 
 
 export default async function handler(req, res) {
-  // req.setHeader("Access-Control-Allow-Origin", "http://localhost:3000"); 
-  // res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000"); 
-  // res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS"); 
-  // res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization"); 
+  req.setHeader("Access-Control-Allow-Origin", "http://localhost:3000"); 
+  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000"); 
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS"); 
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization"); 
 
   await NextCors(req, res, {
     // Options
     methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
-    origin: 'http://localhost:3000',
+    origin: '*',
     optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
   });
 

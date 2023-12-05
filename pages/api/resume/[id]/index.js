@@ -1,11 +1,17 @@
-import resumedata from '../../database/resumes.json';
-import phonedata from '../../database/phones.json';
-import degreedata from '../../database/degrees.json';
-import userdata from '../../database/users.json';
-import languagedata from '../../database/language.json'
+
 import mysql2 from 'mysql2/promise'
 
 export default async function handler(req, res) {
+
+
+  await NextCors(req, res, {
+    // Options
+    methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
+    origin: '*',
+    optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+  });
+
+  
   if (req.method == 'GET') {
     const { id } = req.query
 
