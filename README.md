@@ -45,3 +45,14 @@ Before you begin, ensure you have the following prerequisites installed on your 
 
    ```bash
    git clone https://github.com/HThanh-how/synphylis
+
+2. **Navigate to the project directory and run the following command:**
+    ```bash
+    npm install
+
+3. **Run the development server:**
+    ```bash
+    npm run dev
+4. **Enjoy**
+    Open your browser and navigate to [http://localhost:3000][http://localhost:3000] 
+    Or you can check out the live demo: [CV Management System Demo](https://synphylis.vercel.app/)
