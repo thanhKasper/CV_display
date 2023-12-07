@@ -1,38 +1,23 @@
+const mysql = require('mysql2/promise');
 
-import data from '../database/resumes.json';
-import mysql2 from 'mysql2/promise'
-import NextCors from 'nextjs-cors';
+const pool = mysql.createPool({
+  host: 'sql12.freesqldatabase.com',
+  database: 'sql12667183',
+  user: 'sql12667183',
+  password: 'sNLs2RNbEk',
+  port: 3306,
+});
 
 
-export default async function handler(req, res) {
-  req.setHeader("Access-Control-Allow-Origin", "http://localhost:3000"); 
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000"); 
+export default async function getUser(req, res) {
+
+  res.setHeader("Access-Control-Allow-Origin", "*"); 
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS"); 
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization"); 
+  const connection = await pool.getConnection();
+  const [user] = await connection.query('SELECT * FROM resumes');
+  connection.release();
 
-  await NextCors(req, res, {
-    // Options
-    methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
-    origin: '*',
-    optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-  });
-
-  if (req.method == "GET") {
-
-    const connection = await mysql2.createConnection({
-      host: "sql12.freesqldatabase.com",
-      user: "sql12667183",
-      password: "sNLs2RNbEk",
-      database: "sql12667183",
-      port: 3306
-    })
-
-    const result = await connection.execute(`
-    SELECT * FROM resumes;
-    `)
-
-    connection.destroy()
-
-    res.status(200).json(result[0]);
-  }
+  return res.status(200).json(user);
 }
+

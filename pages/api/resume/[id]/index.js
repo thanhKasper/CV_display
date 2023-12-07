@@ -4,12 +4,9 @@ import mysql2 from 'mysql2/promise'
 export default async function handler(req, res) {
 
 
-  await NextCors(req, res, {
-    // Options
-    methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
-    origin: '*',
-    optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-  });
+  res.setHeader("Access-Control-Allow-Origin", "*"); 
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS"); 
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization"); 
 
   
   if (req.method == 'GET') {

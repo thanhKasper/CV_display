@@ -5,7 +5,7 @@ import { ResumeInfo } from "../_interface/ResumeInfo";
 
 const useResumeGetIdApi = (resumeID: string) => {
 
-  const url = "https://synphylis.vercel.app/api/resume" + resumeID;
+  const url = "https://synphylis.vercel.app/api/resume/" + resumeID;
   const [data, setData] = useState<ResumeInfo>();
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
@@ -19,7 +19,7 @@ const useResumeGetIdApi = (resumeID: string) => {
         const result = await axios.get(url);
         console.log(result)
 
-        setData(result.data);
+        setData(result.data.resume);
       } catch (error) {
         setIsError(true);
       }

@@ -16,9 +16,10 @@ export default function GamePage({ params }: { params: { id: string } }) {
   const [number, setNumber] = React.useState(3);
   const [{ data, isLoading, isError }] = useResumeGetIdApi(params.id);
 
-  useEffect(() => {
-    console.log("data: ", data);
-  }, [data]);
+  // useEffect(() => {
+  //   console.log("data: ", data);
+  //   console.log("data mail: ", data?.email);
+  // }, [data]);
 
   const styles = StyleSheet.create({
     page: {
@@ -39,13 +40,18 @@ export default function GamePage({ params }: { params: { id: string } }) {
       width: "65vw",
       color: "#35251d",
     },
+    text20: {
+      fontSize: 20,
+      fontWeight: 700,
+      paddingVertical: 5,
+    },
     text17: {
       fontSize: 17,
       fontWeight: 700,
       paddingVertical: 5,
       marginVertical: 10,
-      borderBottom: '1 #FFFFFF solid',
-      borderColor: '#FFFFFF'
+      borderBottom: "1 #dce1df solid",
+      borderColor: "#dce1df",
     },
     text12: {
       fontSize: 12,
@@ -68,14 +74,16 @@ export default function GamePage({ params }: { params: { id: string } }) {
       {
         src: "https://cdnjs.cloudflare.com/ajax/libs/ink/3.1.10/fonts/Roboto/roboto-bold-webfont.ttf",
         fontWeight: 700,
-      }
-    ]
+      },
+    ],
   });
 
   return (
     <>
       {!data ? (
-        <p className="">There are some network errors, please wait for the page to load</p>
+        <p className="">
+          There are some network errors, please wait for the page to load
+        </p>
       ) : (
         <div className="m-auto mt-10 w-[80vw]">
           <PDFViewer style={{ width: "80vw", height: "80vh" }}>
@@ -85,22 +93,26 @@ export default function GamePage({ params }: { params: { id: string } }) {
                   <Text style={styles.text17}>Contact</Text>
                   <Text style={styles.text12}>Phone</Text>
                   {data.phone_number?.map((phoneNumber, idx) => (
-                    <Text key={idx} style={styles.text11}>{phoneNumber}</Text>
+                    <Text key={idx} style={styles.text11}>{phoneNumber.phone_number}</Text>
                   ))}
                   <Text style={styles.text12}>Email</Text>
                   <Text style={styles.text11}>{data.email}</Text>
                   <Text style={styles.text17}>Education</Text>
                   {data.degree?.map((deg, idx) => (
-                    <Text key={idx} style={styles.text11}>{deg}</Text>
+                    <Text key={idx} style={styles.text11}>{deg.name}</Text>
                   ))}
                   <Text style={styles.text17}>Language</Text>
-                  {data.language?.map((lang, idx) => (
+                  {/* {data.language?.map((lang, idx) => (
                     <Text key={idx} style={styles.text11}>{lang}</Text>
-                  ))}
+                  ))} */}
                 </View>
                 <view style={styles.section2}>
-                  <Text>{data.name}</Text>
-                  <Text>{data.description}</Text>
+                  <Text style={styles.text20}>{data.name}</Text>
+                  <Text style={styles.text11}>{data.description}</Text>
+                  <Text style={styles.text17}>Experience</Text>
+                  <Text style={styles.text11}>{data.experience}</Text>
+                  <Text style={styles.text17}>Skill</Text>
+                  <Text style={styles.text11}>{data.skills}</Text>
                 </view>
               </Page>
             </Document>

@@ -116,7 +116,7 @@ export default function ResumeCard({ resume_id, name, description }: Resume) {
           <Stack spacing={1}>
             <Text textColor={"whiteAlpha.600"}>{name}</Text>
             <Text textColor={"white"} className="font-bold">
-              {description}
+              {description.slice(0,40) +"..."}
             </Text>
             {/* <Text textColor={"white"}>${price}</Text> */}
           </Stack>
