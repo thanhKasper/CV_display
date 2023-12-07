@@ -6,6 +6,10 @@ export interface Degree {
     name: string;
 }
 
+export interface Language {
+  description: string;
+}
+
 export interface ResumeInfo {
   age: number;
   degree: Degree[];
@@ -19,4 +23,5 @@ export interface ResumeInfo {
   resume_id: number;
   skills: string;
   user_id: number;
+  language: Language[]
 }

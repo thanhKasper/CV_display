@@ -102,9 +102,9 @@ export default function GamePage({ params }: { params: { id: string } }) {
                     <Text key={idx} style={styles.text11}>{deg.name}</Text>
                   ))}
                   <Text style={styles.text17}>Language</Text>
-                  {/* {data.language?.map((lang, idx) => (
-                    <Text key={idx} style={styles.text11}>{lang}</Text>
-                  ))} */}
+                  {data.language?.map((lang, idx) => (
+                    <Text key={idx} style={styles.text11}>{lang.description}</Text>
+                  ))}
                 </View>
                 <view style={styles.section2}>
                   <Text style={styles.text20}>{data.name}</Text>
