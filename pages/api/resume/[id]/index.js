@@ -35,6 +35,10 @@ export default async function handler(req, res) {
     SELECT phone_number FROM phones WHERE resume_id = ?;
     `, [id])
 
+    const languages = await connection.execute(`
+    SELECT description FROM languages WHERE resume_id = ?;
+    `, [id])
+
     const resume = result[0][0]
     console.log(resume)
 
@@ -51,6 +55,7 @@ export default async function handler(req, res) {
       skills: resume.skills,
       experience: resume.experience,
       reg_date: resume.reg_date,
+      language: languages[0]
     };
 
     connection.destroy()
