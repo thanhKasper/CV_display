@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "@/theme";
 import SearchBar from "@/component/Layout/SearchBar";
+import Footer from "@/component/Layout/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,6 +37,7 @@ export default function RootLayout({
         <ChakraProvider theme={theme}>
               <SearchBar />
               {children}
+              <Footer/>
         </ChakraProvider>
       </body>
     </html>
