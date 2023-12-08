@@ -80,44 +80,45 @@ export default function GamePage({ params }: { params: { id: string } }) {
 
   return (
     <>
+
       {!data ? (
-        <p className="">
+        <><title> CV Details</title><p className="">
           There are some network errors, please wait for the page to load
-        </p>
+        </p></>
       ) : (
-        <div className="m-auto mt-10 w-[80vw]">
-          <PDFViewer style={{ width: "80vw", height: "80vh" }}>
-            <Document title={`${data.name}_CV`}>
-              <Page size="A4" style={styles.page}>
-                <View style={styles.section1}>
-                  <Text style={styles.text17}>Contact</Text>
-                  <Text style={styles.text12}>Phone</Text>
-                  {data.phone_number?.map((phoneNumber, idx) => (
-                    <Text key={idx} style={styles.text11}>{phoneNumber.phone_number}</Text>
-                  ))}
-                  <Text style={styles.text12}>Email</Text>
-                  <Text style={styles.text11}>{data.email}</Text>
-                  <Text style={styles.text17}>Education</Text>
-                  {data.degree?.map((deg, idx) => (
-                    <Text key={idx} style={styles.text11}>{deg.name}</Text>
-                  ))}
-                  <Text style={styles.text17}>Language</Text>
-                  {data.language?.map((lang, idx) => (
-                    <Text key={idx} style={styles.text11}>{lang.description}</Text>
-                  ))}
-                </View>
-                <view style={styles.section2}>
-                  <Text style={styles.text20}>{data.name}</Text>
-                  <Text style={styles.text11}>{data.description}</Text>
-                  <Text style={styles.text17}>Experience</Text>
-                  <Text style={styles.text11}>{data.experience}</Text>
-                  <Text style={styles.text17}>Skill</Text>
-                  <Text style={styles.text11}>{data.skills}</Text>
-                </view>
-              </Page>
-            </Document>
-          </PDFViewer>
-        </div>
+        <><title> {data.name}</title><div className="m-auto mt-10 w-[80vw]">
+            <PDFViewer style={{ width: "80vw", height: "80vh" }}>
+              <Document title={`${data.name}_CV`}>
+                <Page size="A4" style={styles.page}>
+                  <View style={styles.section1}>
+                    <Text style={styles.text17}>Contact</Text>
+                    <Text style={styles.text12}>Phone</Text>
+                    {data.phone_number?.map((phoneNumber, idx) => (
+                      <Text key={idx} style={styles.text11}>{phoneNumber.phone_number}</Text>
+                    ))}
+                    <Text style={styles.text12}>Email</Text>
+                    <Text style={styles.text11}>{data.email}</Text>
+                    <Text style={styles.text17}>Education</Text>
+                    {data.degree?.map((deg, idx) => (
+                      <Text key={idx} style={styles.text11}>{deg.name}</Text>
+                    ))}
+                    <Text style={styles.text17}>Language</Text>
+                    {data.language?.map((lang, idx) => (
+                      <Text key={idx} style={styles.text11}>{lang.description}</Text>
+                    ))}
+                  </View>
+                  <view style={styles.section2}>
+                    <Text style={styles.text20}>{data.name}</Text>
+                    <Text style={styles.text11}>{data.description}</Text>
+                    <Text style={styles.text17}>Experience</Text>
+                    <Text style={styles.text11}>{data.experience}</Text>
+                    <Text style={styles.text17}>Skill</Text>
+                    <Text style={styles.text11}>{data.skills}</Text>
+                  </view>
+                </Page>
+              </Document>
+            </PDFViewer>
+          </div></>
       )}
     </>
   );
