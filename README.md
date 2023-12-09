@@ -54,5 +54,5 @@ Before you begin, ensure you have the following prerequisites installed on your 
     ```bash
     npm run dev
 4. **Enjoy**
-   - Open your browser and navigate to [http://localhost:3000][http://localhost:3000]
+ - Open your Browser and Navigate to [http://localhost:3000](http://localhost:3000)
  - Or you can check out the live demo: [CV Management System Demo](https://synphylis.vercel.app/)
