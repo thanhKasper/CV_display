@@ -45,14 +45,37 @@ Before you begin, ensure you have the following prerequisites installed on your 
 
    ```bash
    git clone https://github.com/HThanh-how/synphylis
+   ```
 
 2. **Navigate to the project directory and run the following command:**
-    ```bash
-    npm install
+
+   ```bash
+   npm install
+   ```
 
 3. **Run the development server:**
-    ```bash
-    npm run dev
-4. **Enjoy**
-   - Open your browser and navigate to [http://localhost:3000][http://localhost:3000]
- - Or you can check out the live demo: [CV Management System Demo](https://synphylis.vercel.app/)
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser and navigate to [http://localhost:3000](http://localhost:3000)**
+
+## Acknowledgments
+
+This project was made possible by the dedicated efforts and passionate contributions of the following individuals:
+
+- [**Vũ Đồng Tuệ Quyên**](https://github.com/vdtq12)
+
+
+- [**Kiều Tiến Thành**](https://github.com/thanhKasper)
+
+- [**Biện Công Thanh**](https://github.com/thanhbien0402)
+
+- [**Phạm Huy Thanh**](https://github.com/HThanh-how/)
+
+## Special Thanks
+
+A heartfelt thank you to the entire team for their relentless effort and unwavering passion in bringing this project to life. Your dedication is truly commendable!
+
+Feel free to explore the system, create CVs, and experience the seamless management of Curriculum Vitaes.

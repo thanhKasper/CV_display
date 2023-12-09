@@ -13,7 +13,6 @@ export default async function getUser(req, res) {
   const connection = await pool.getConnection();
   const [user] = await connection.query('SELECT * FROM resumes');
   connection.release();
-
   return res.status(200).json(user);
 }
 
