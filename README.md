@@ -67,7 +67,6 @@ This project was made possible by the dedicated efforts and passionate contribut
 
 - [**Vũ Đồng Tuệ Quyên**](https://github.com/vdtq12)
 
-
 - [**Kiều Tiến Thành**](https://github.com/thanhKasper)
 
 - [**Biện Công Thanh**](https://github.com/thanhbien0402)
